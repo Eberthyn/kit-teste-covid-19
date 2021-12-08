@@ -67,13 +67,13 @@ $(".contentMenu.open .submenu").show();
 $(".step:last-child .line").hide();
 
 /* Adiciona suavidade na rolagem da ancoragem */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
+$(document).on("click", 'a[href*="#"]', function(e) {
 
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+  var target = $(this).attr("href"); //Get the target
+  var scrollToPosition = $(target).offset().top - 150;
+
+  $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function(){
+     window.location.hash = target;
   });
 });
 
@@ -81,9 +81,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-
-/* Rola tela para o Inicio da Aula*/
-$(document).on('click', '.botaoComecar', function(e) {
-  e.preventDefault();
-  $('html,body').animate({scrollTop: ($("#topico1").offset().top) }, 500);
-  });
