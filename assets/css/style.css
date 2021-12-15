@@ -560,7 +560,7 @@ footer{
 }
 .tooltipStyle{
     font-weight: 600;
-    color: #84A3B5;
+    color: #84A3B5 !important;
 }
 .tooltipStyle:hover{
     color: #84A3B5;
