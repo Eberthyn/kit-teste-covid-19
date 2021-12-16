@@ -186,7 +186,7 @@ body, header, footer{
 .step:last-child .line {
   top: 25px;
   left: 11.5px;
-  height: 85%;
+  height: 87%;
 }
 
 .contentMenu {
@@ -509,7 +509,7 @@ footer{
         max-width: 35%;
     }
     .step:last-child .line{
-        height: 80% ;
+        height: 85% ;
     }
     .carousel-control-next,.carousel-control-prev{
        margin: 60px;
@@ -536,6 +536,9 @@ footer{
     }
     .informativo{
         padding: 10px 0px 10px 0px;
+    }
+    .step:last-child .line{
+        height: 87% ;
     }
 }
 
@@ -567,4 +570,18 @@ footer{
 }
 .tooltip .arrow:before {
     border-top-color: #84A3B5 !important;
+}
+
+/* Botão Avaliação */
+#botaoAvaliacao{
+    background-color: #19223C;
+    border-radius: 25px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px !important;
+    margin: auto;
 }
