@@ -67,13 +67,13 @@ $(".contentMenu.open .submenu").show();
 $(".step:last-child .line").hide();
 
 /* Adiciona suavidade na rolagem da ancoragem */
-$(document).on("click", 'a[href*="#"]', function(e) {
+$(document).on("click", 'a[href*="#"]', function (e) {
 
   var target = $(this).attr("href"); //Get the target
   var scrollToPosition = $(target).offset().top - 150;
 
-  $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function(){
-     window.location.hash = target;
+  $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function () {
+    window.location.hash = target;
   });
 });
 
@@ -81,3 +81,45 @@ $(document).on("click", 'a[href*="#"]', function(e) {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+/* Altera rodapé entre Desktop e Tablet/Smartphone */
+var tam = $(window).width();
+if (tam <= 980){
+  $("#rodape1").attr("src","assets/images/rodape/img2.jpeg");
+  $("#rodape2").attr("src","assets/images/rodape/img3.jpeg");
+  $("#colunaRodape").removeClass("col-md-12");
+  $("#colunaRodape").addClass("col-md-6");
+}else{
+  $("#rodape2").attr("src","assets/images/rodape/img1.jpeg");
+}
+
+/* Controlador do Zoom*/
+var currFFZoom = 1;
+var currIEZoom = 100;
+
+function plus() {
+  //alert('sad');
+  var step = 0.05;
+  currFFZoom += step;
+  $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
+  var stepie = 5;
+  currIEZoom += stepie;
+  $('body').css('zoom', ' ' + currIEZoom + '%');
+
+};
+function minus() {
+  //alert('sad');
+  var step = 0.05;
+  currFFZoom -= step;
+  $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
+  var stepie = 5;
+  currIEZoom -= stepie;
+  $('body').css('zoom', ' ' + currIEZoom + '%');
+};
+
+function restore() {
+  currFFZoom = 100;
+  $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
+  currIEZoom = 100;
+  $('body').css('zoom', ' ' + currIEZoom + '%');
+}

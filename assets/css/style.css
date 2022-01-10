@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 body, header, footer{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /** Menu Superior **/
@@ -235,7 +235,7 @@ body, header, footer{
     margin: 0% !important;
 }
 .tarja{
-    margin-top: -1.4px;
+    margin-top: -1.5px;
     margin-bottom: 30px !important;
 }
 .row{
@@ -374,14 +374,6 @@ h2{
     margin-bottom: 24px;
     margin-top: 40px;
     color: #84A3B5;
-}
-h3{
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    margin-top: 50px;
-    color: #84A3B5;
-    text-transform: uppercase;
 }
 p{
     margin-bottom: 24px;
