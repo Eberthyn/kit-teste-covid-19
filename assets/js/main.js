@@ -85,12 +85,10 @@ $(function () {
 /* Altera rodapé entre Desktop e Tablet/Smartphone */
 var tam = $(window).width();
 if (tam <= 980){
-  $("#rodape1").attr("src","assets/images/rodape/img2.jpeg");
-  $("#rodape2").attr("src","assets/images/rodape/img3.jpeg");
-  $("#colunaRodape").removeClass("col-md-12");
-  $("#colunaRodape").addClass("col-md-6");
+  $("#rodape1").attr("src","assets/images/rodape/img1.png");
+  $("#rodape2").attr("src","assets/images/rodape/img2.png").css("max-width", "60%");
 }else{
-  $("#rodape2").attr("src","assets/images/rodape/img1.jpeg");
+  $("#rodape2").attr("src","assets/images/rodape/img3.png");
 }
 
 /* Controlador do Zoom*/
