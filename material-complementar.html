@@ -15,16 +15,12 @@
     <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
     <link href="./assets/css/style.css" rel="stylesheet">
     <style type="text/css">
-        p {
+        .conteudo p {
             margin-bottom: 0px !important;
             margin-top: 30px !important;
         }
 
-        .conteudo {
-            padding: 5% !important;
-        }
-
-        a {
+        .conteudo a {
             font-size: 14px;
             font-weight: bold;
             color: #84A3B5;
@@ -34,8 +30,308 @@
 
 <body>
 
+    <!-- Menu Superior -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
+
+            <!-- Logos -->
+            <img src="assets/images/logos/logoAula.png" class="img-fluid logo" alt="Logo Fiocruz" />
+
+            <!-- Botão Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="material-complementar.html">Material Complementar</a></li>
+                    <li><a href="creditos.html">Créditos</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <!-- Fim do Menu Superior -->
+
+    <!-- Início da Row-main-->
     <div class="row" id="row-main">
-        <div class="col-md-12">
+
+        <!-- Início da Coluna do Menu Lateral-->
+        <div class="col-md-2" id="sidebar">
+
+            <!-- Step Menu -->
+            <div id="accordion" class="stepContainer">
+
+                <!-- Botão p/ Recolher Sidebar-->
+                <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
+
+                <!-- Botão Secundário p/ Recolher Sidebar -->
+                <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;"
+                        src="assets/images/icones/icone.png" alt=""></span>
+
+                <!-- Step 1 -->
+                <div class="step" id="aula1">
+                    <div class="v-stepper">
+                        <div class="circle">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu">
+                        <div class="link title">
+                            <a class="aula1" style="cursor: pointer;">Aula 1</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse hide" id="collapseAula1">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula1topico1"></div>
+                                </div>
+                                <p><a href="aula1.html#topico1">Sobre o Kit TR COVID-19 Ag</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula1topico2"></div>
+                                </div>
+                                <p><a href="aula1.html#topico2">Armazenamento, transporte e manuseio</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula1topico3"></div>
+                                </div>
+                                <p><a href="aula1.html#topico3">Elementos do kit</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula1topico4"></div>
+                                </div>
+                                <p><a href="aula1.html#topico4">Coleta de amostra e interpretação dos resultados</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula1topico5"></div>
+                                </div>
+                                <p><a href="aula1.html#topico5">Boas práticas de manipulação</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula1topico6"></div>
+                                </div>
+                                <p><a href="aula1.html#topico6">Conclusão da aula</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Step 1 -->
+
+                <!-- Step 2 -->
+                <div class="step" id="aula2">
+                    <div class="v-stepper">
+                        <div class="circle">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu">
+                        <div class="link title">
+                            <a class="aula2" style="cursor: pointer;">Aula 2</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse hide" id="collapseAula2">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula2topico1"></div>
+                                </div>
+                                <p><a href="aula2.html#topico1">Sobre o Kit TR DPP<sup>®</sup> COVID-19 Ag</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula2topico2"></div>
+                                </div>
+                                <p><a href="aula2.html#topico2">Armazenamento, transporte e manuseio</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula2topico3"></div>
+                                </div>
+                                <p><a href="aula2.html#topico3">Elementos do kit</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula2topico4"></div>
+                                </div>
+                                <p><a href="aula2.html#topico4">Coleta de amostra e interpretação dos resultados</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula2topico5"></div>
+                                </div>
+                                <p><a href="aula2.html#topico5">Boas práticas de manipulação</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula2topico6"></div>
+                                </div>
+                                <p><a href="aula2.html#topico6">Conclusão da aula</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Step 2 -->
+
+                <!-- Step 3 -->
+                <div class="step" id="aula3">
+                    <div class="v-stepper">
+                        <div class="circle">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu">
+                        <div class="link title">
+                            <a class="aula3" style="cursor: pointer;">Aula 3</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse hide" id="collapseAula3">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula3topico1"></div>
+                                </div>
+                                <p><a href="aula3.html#topico1">Sobre o Kit TR SARS-CoV-2 Ag</a>
+                                </p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula3topico2"></div>
+                                </div>
+                                <p><a href="aula3.html#topico2">Armazenamento, transporte e manuseio</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula3topico3"></div>
+                                </div>
+                                <p><a href="aula3.html#topico3">Elementos do kit</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula3topico4"></div>
+                                </div>
+                                <p><a href="aula3.html#topico4">Coleta de amostra e interpretação dos resultados</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula3topico5"></div>
+                                </div>
+                                <p><a href="aula3.html#topico5">Boas práticas de manipulação</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula3topico6"></div>
+                                </div>
+                                <p><a href="aula3.html#topico6">Conclusão da aula</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Step 3 -->
+
+                <!-- Step 4 -->
+                <div class="step" id="aula4">
+                    <div class="v-stepper">
+                        <div class="circle">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu">
+                        <div class="link title">
+                            <a class="aula4" style="cursor: pointer;">Aula 4</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse" id="collapseAula4">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula4topico1"></div>
+                                </div>
+                                <p><a href="aula4.html#topico1">Sobre o Kit Teste Rápido COVID Ag</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula4topico2"></div>
+                                </div>
+                                <p><a href="aula4.html#topico2">Armazenamento, transporte e manuseio</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula4topico3"></div>
+                                </div>
+                                <p><a href="aula4.html#topico3">Elementos do kit</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula4topico4"></div>
+                                </div>
+                                <p><a href="aula4.html#topico4">Coleta de amostra e interpretação dos resultados</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula4topico5"></div>
+                                </div>
+                                <p><a href="aula4.html#topico5">Boas práticas de manipulação</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="aula4topico6"></div>
+                                </div>
+                                <p><a href="aula4.html#topico6">Conclusão do curso</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Fim Step 4 -->
+
+            </div>
+            <!-- Fim do Step Menu -->
+
+        </div> <!-- Fim da Coluna Menu Lateral -->
+
+        <!-- Início Coluna de Conteúdo -->
+        <div class="col-md-10" id="content">
+
             <div class="conteudo">
 
                 <h1>Material Complementar</h1>
@@ -43,13 +339,13 @@
                 <p class="pinfo tooltipStyle">PÁGINAS NA INTERNET</p>
 
                 <p>Página sobre o teste TR COVID-19 Ag - Bio-Manguinhos<br>
-                    <a href="https://www.bio.fiocruz.br/index.php/br/produtos/reativos/testes-rapidos/dpp-covid19-ag"
-                        target="_blank">https://www.bio.fiocruz.br/index.php/br/produtos/reativos/testes-rapidos/dpp-covid19-ag</a>
+                    <a href="https://www.bio.fiocruz.br/index.php/br/produtos/reativos/testes-rapidos/tr-covid-19-ag"
+                        target="_blank">https://www.bio.fiocruz.br/index.php/br/produtos/reativos/testes-rapidos/tr-covid-19-ag</a>
                 </p>
 
-                <p>Página sobre o teste TR DPP® COVID-19 Ag - Bio-Manguinhos<br>
-                    <a href="http://repositoriocovid19.unb.br/repositorio-produtos/cuidados-com-idosos-em-tempos-de-coronavirus/"
-                        target="_blank">http://repositoriocovid19.unb.br/repositorio-produtos/cuidados-com-idosos-em-tempos-de-coronavirus/</a>
+                <p>Página sobre o teste TR DPP<sup>®</sup> COVID-19 Ag - Bio-Manguinhos<br>
+                    <a href="https://www.bio.fiocruz.br/index.php/br/produtos/reativos/testes-rapidos/dpp-covid19-ag"
+                        target="_blank">https://www.bio.fiocruz.br/index.php/br/produtos/reativos/testes-rapidos/dpp-covid19-ag</a>
                 </p>
 
                 <p>Página sobre o teste TR SARS-CoV-2 Ag - Bio-Manguinhos<br>
@@ -74,12 +370,12 @@
                         target="_blank">https://www.bio.fiocruz.br/images/bm-bul-152-00-r-sn-guia-rapido-ag-humasis.pdf</a>
                 </p>
 
-                <p>Documento - Manual sobre o teste TR DPP® COVID-19 Ag - Bio-Manguinhos<br>
+                <p>Documento - Manual sobre o teste TR DPP<sup>®</sup> COVID-19 Ag - Bio-Manguinhos<br>
                     <a href="https://www.bio.fiocruz.br/images/bm-bul-142-04-r-sn---tr-dpp-covid-19-ag--.pdf"
                         target="_blank">https://www.bio.fiocruz.br/images/bm-bul-142-04-r-sn---tr-dpp-covid-19-ag--.pdf</a>
                 </p>
 
-                <p>Documento - Guia Rápido sobre o teste TR DPP® COVID-19 Ag - Bio-Manguinhos<br>
+                <p>Documento - Guia Rápido sobre o teste TR DPP<sup>®</sup> COVID-19 Ag - Bio-Manguinhos<br>
                     <a href="https://www.bio.fiocruz.br/images/bm-bul-154-02-r-sn-guia-rapido-ag.pdf"
                         target="_blank">https://www.bio.fiocruz.br/images/bm-bul-154-02-r-sn-guia-rapido-ag.pdf</a>
                 </p>
@@ -104,6 +400,11 @@
                         target="_blank">https://www.ibmp.org.br/pt-br/wp-content/uploads/2021/12/ProcedimentoTesteRapido.pdf</a>
                 </p>
 
+                <p>Documento - Manual de Utilização do Teste Rápido COVID Ag - IBMP<br>
+                    <a href="https://www.ibmp.org.br/pt-br/wp-content/uploads/2021/09/Instrução-de-Uso_Teste-rápido-COVID-Ag_Rev.-04.pdf"
+                        target="_blank">https://www.ibmp.org.br/pt-br/wp-content/uploads/2021/09/Instrução-de-Uso_Teste-rápido-COVID-Ag_Rev.-04.pdf</a>
+                </p>
+
                 <p class="pinfo tooltipStyle">VÍDEOS</p>
 
                 <p>Guia de utilização do Teste TR COVID-19 Ag - Bio-Manguinhos</p>
@@ -118,13 +419,14 @@
                     </div>
                 </div>
 
-                <p>Guia de utilização do Teste TR DPP® COVID-19 Ag - Bio-Manguinhos</p>
+                <p>Guia de utilização do Teste TR DPP<sup>®</sup> COVID-19 Ag - Bio-Manguinhos</p>
 
                 <div class="row" style="margin-bottom: 24px !important;">
                     <div class="col-md-8" style="padding-left: 0px !important;">
                         <div class="embed-responsive-16by9">
-                            <iframe width="350" height="250" src="https://www.youtube.com/embed/jNI_oE0_HtQ" frameborder="0"
-                                allow="encrypted-media" allowfullscreen="allowfullscreen" preload="none"></iframe>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/jNI_oE0_HtQ"
+                                frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen"
+                                preload="none"></iframe>
                         </div>
                     </div>
                 </div>
@@ -133,8 +435,9 @@
                 <div class="row" style="margin-bottom: 24px !important;">
                     <div class="col-md-8" style="padding-left: 0px !important;">
                         <div class="embed-responsive-16by9">
-                            <iframe width="350" height="250" src="https://www.youtube.com/embed/wF9HuwZvLOY" frameborder="0"
-                                allow="encrypted-media" allowfullscreen="allowfullscreen" preload="none"></iframe>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/wF9HuwZvLOY"
+                                frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen"
+                                preload="none"></iframe>
                         </div>
                     </div>
                 </div>
@@ -151,6 +454,20 @@
                 </div>
 
             </div>
+
+            <!-- Rodapé -->
+            <footer>
+                <div class="row-main" style="box-shadow: 0px -2px 2px rgba(0,0,0,0.2);">
+                    <div class="col-md-12 centro">
+                        <img class="img-fluid centro" style="max-width: 60%;" id="rodape1" src="" alt="">
+                    </div>
+                    <div class="col-md-12 centro" id="colunaRodape">
+                        <img class="img-fluid centro" style="max-width: 100%;" id="rodape2" src="" alt="">
+                    </div>
+                </div>
+            </footer>
+            <!-- Fim Rodapé -->
+
         </div>
     </div>
 
@@ -159,5 +476,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sidebar.js"></script>
 
 </body>

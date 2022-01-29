@@ -33,6 +33,10 @@ body, header, footer{
     margin: 60px 28% 0px 24%;
 
 }
+.tooltipStyle{
+    font-weight: 600;
+    color: #84A3B5 !important;
+}
 
 
 /*Menu Superior*/

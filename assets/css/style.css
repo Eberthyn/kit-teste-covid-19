@@ -506,7 +506,6 @@ footer{
     .carousel-control-next,.carousel-control-prev{
        margin: 60px;
     }
-    
 }
 
 /* Smartphone */
@@ -531,6 +530,9 @@ footer{
     }
     .step:last-child .line{
         height: 87% ;
+    }
+    .warningStyle1 {
+        padding-left: 30px !important;
     }
 }
 
@@ -577,3 +579,6 @@ footer{
     margin-top: 16px !important;
     margin: auto;
 }
+.warningStyle2 {
+    padding-left: 30px !important;
+ }
