@@ -67,13 +67,15 @@ $(".contentMenu.open .submenu").show();
 $(".step:last-child .line").hide();
 
 /* Adiciona suavidade na rolagem da ancoragem */
-$(document).on("click", 'a[href*="#"]', function (e) {
+$(document).ready(function (e) {
+  $(document).on("click", 'a[href*="#"]', function () {
 
-  var target = $(this).attr("href"); //Get the target
-  var scrollToPosition = $(target).offset().top - 150;
+    var target = $(this).attr("href"); //Get the target
+    var scrollToPosition = $(target).offset().top - 150;
 
-  $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function () {
-    window.location.hash = target;
+    $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function () {
+      window.location.hash = target;
+    });
   });
 });
 
@@ -84,11 +86,11 @@ $(function () {
 
 /* Altera rodapé entre Desktop e Tablet/Smartphone */
 var tam = $(window).width();
-if (tam <= 980){
-  $("#rodape1").attr("src","assets/images/rodape/img1.png");
-  $("#rodape2").attr("src","assets/images/rodape/img2.png").css("max-width", "60%");
-}else{
-  $("#rodape2").attr("src","assets/images/rodape/img3.png");
+if (tam <= 980) {
+  $("#rodape1").attr("src", "assets/images/rodape/img1.png");
+  $("#rodape2").attr("src", "assets/images/rodape/img2.png").css("max-width", "60%");
+} else {
+  $("#rodape2").attr("src", "assets/images/rodape/img3.png");
 }
 
 /* Controlador do Zoom*/
