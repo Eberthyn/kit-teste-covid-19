@@ -67,14 +67,12 @@ $(".contentMenu.open .submenu").show();
 $(".step:last-child .line").hide();
 
 /* Adiciona suavidade na rolagem da ancoragem */
-$(document).on("click", 'a[href*=""]', function () {
-
+$(document).on("click", 'a[href^="#"]', function (e) {
+  e.preventDefault();
   var target = $(this).attr("href"); //Get the target
-  var scrollToPosition = $(target).offset().top - 150;
+  var scrollToPosition = $(target).offset().top;
 
-  $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function () {
-    window.location.hash = target;
-  });
+  $('html,body').animate({ scrollTop: scrollToPosition - 150 }, 600);
 });
 
 /* Adiciona tooltip (Abas) */

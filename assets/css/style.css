@@ -292,35 +292,6 @@ ul{
     padding-inline-start: 20px !important;
 }
 
-/* Imagem do Box Verde */
-#Aula1Img2{
-    background-image: url(../images/aula1/img2.png);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-#Aula4Img3{
-    background-image: url(../images/aula4/img3.png);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-#Aula5Img1{
-    background-image: url(../images/aula5/img1.png);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-
 .informativo{
     background-color: #F5F5F5;
     color: black;
@@ -503,24 +474,15 @@ footer{
     .step:last-child .line{
         height: 85% ;
     }
-    .carousel-control-next,.carousel-control-prev{
-       margin: 60px;
-    }
 }
 
 /* Smartphone */
 @media (max-width: 480px){
-    .step:last-child .line{
-        height: 82%;
-    }
     .informativo ul{
     padding-inline-start: 0px;
     }
     .accordion ul{
     padding-inline-start: 0px;
-    }
-    .carousel-control-next,.carousel-control-prev{
-        display: none;
     }
     .blocoTexto{
         padding: 30px 30px 10px 30px !important;
@@ -529,7 +491,7 @@ footer{
         padding: 10px 0px 10px 0px;
     }
     .step:last-child .line{
-        height: 87% ;
+        height: 89% ;
     }
     .warningStyle1 {
         padding-left: 30px !important;
